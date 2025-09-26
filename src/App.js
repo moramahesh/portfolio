@@ -32,7 +32,7 @@ function App() {
             <li><a href='#skills'>Skills</a></li>
             <li><a href='#projects'>Projects</a></li>
             <li><a href='#contact'>Contact</a></li>
-            <li><a href='/Maheswara_Developer_resume.pdf' target='_blank' rel='noopener noreferrer'>Resume</a></li>
+            <li><a href={`${process.env.PUBLIC_URL}/Maheswara_Developer_resume.pdf`} target='_blank' rel='noopener noreferrer'>Resume</a></li>
           </ul>
         </nav>
       </div>
