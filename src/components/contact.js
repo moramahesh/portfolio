@@ -20,8 +20,8 @@ const Contact = () => {
         // Send email via EmailJS
         emailjs
             .send(
-                "service_mahi215",     
-                "template_mahi215",    
+                "service_mahi215",
+                "template_mahi215",
                 formData,
                 "czimXRS0tBMazGpKl"
             )
@@ -72,6 +72,11 @@ const Contact = () => {
                     required
                 />
                 <button type="submit">Submit</button>
+                <p>or</p>
+                <a href="https://wa.me/919391759475" target="_blank" rel="noopener noreferrer">
+                    Chat on WhatsApp
+                </a>
+
             </form>
         </div>
     );

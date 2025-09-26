@@ -133,60 +133,46 @@ header .box .inner-box img {
   padding: 25px;
   filter: opacity(0.8);
 }
-
-header .box .inner-box .dropdown {
-  display: flex;
-  flex-direction: column;
-  margin-top: 4vw;
-  width: max-content;
+header .box .inner-box .home-logos p{
+  text-align: center;
+  font-size: large;
+  color: rgb(63, 3, 101);
+  font-family: 'Times New Roman', Times, serif;
+  margin-top: 2.5rem;
+}
+header .box .inner-box .home-logos a img {
+  width: 2rem;
+  padding: 0;
+  margin: 1rem 1rem;
+  border-radius: 1vw;
+}
+header .box .inner-box .home-logos a:first-of-type img{
+  box-shadow: 0px 0px 15px 2px rgba(27, 27, 235, 0.526);
+  filter: brightness(100%);
+}
+header .box .inner-box .home-logos a:first-of-type img:hover{
+  box-shadow: 0px 0px 20px 1px rgba(18, 7, 220, 0.921);
+  filter: brightness(110%) contrast(100%);
+}
+header .box .inner-box .home-logos a:nth-of-type(2) img{
+  box-shadow: 0px 0px 15px 2px rgba(0, 0, 0, 0.626);
+  filter: brightness(20%);
+}
+header .box .inner-box .home-logos a:nth-of-type(2) img:hover{
+  box-shadow: 0px 0px 20px 2px rgba(0, 0, 0, 0.96);
+  filter: brightness(200%) contrast(100%);
 }
 
-header .box .inner-box .dropdown p {
-  background-color: darkslateblue;
-  padding: 5px 10px 5px 20px;
-  border-radius: 5px;
-  cursor: pointer;
-  color: rgb(211, 210, 210);
-  width: fit-content;
-}
+header .box .inner-box .home-logos a:nth-of-type(3) img{
+  box-shadow: 0px 0px 15px 2px rgba(204, 24, 228, 0.626);
+  filter: brightness(100%);
+  width: 2.2rem;
+  border-radius: 50%;
 
-header .box .inner-box .dropdown p .dropbtn {
-  background-color: darkslateblue;
-  border: none;
-  color: white;
-  padding-left: 10px;
 }
-
-header .box .inner-box .dropdown p .dropbtn::after {
-  content: "∨";
-}
-
-header .box .inner-box .dropdown:hover .dropbtn::after {
-  content: "∧";
-}
-
-header .box .inner-box .dropdown .dropdown-content {
-  list-style: none;
-  background-color: rgba(134, 183, 246, 0.422);
-  padding: 10px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.321);
-  display: none;
-  width: 80%;
-  align-items: center;
-}
-
-header .box .inner-box .dropdown .dropdown-content li {
-  margin-top: 5px;
-}
-
-header .box .inner-box .dropdown .dropdown-content a {
-  text-decoration: none;
-  color: rgb(77, 9, 133);
-  font-weight: 500;
-}
-
-header .box .inner-box .dropdown:hover .dropdown-content {
-  display: block;
+header .box .inner-box .home-logos a:nth-of-type(3) img:hover{
+  box-shadow: 0px 0px 20px 2px rgba(182, 4, 231, 0.96);
+  filter: brightness(110%) contrast(100%);
 }
 
 header .box .pic-box {

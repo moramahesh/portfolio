@@ -1,6 +1,6 @@
 import logo from './components/images/coding.png';
 import './App.css';
-import { BrowserRouter } from "react-router-dom";
+import { HashRouter } from "react-router-dom";
 import About from './components/About';
 import Projects from './components/Projects';
 import Dev_logo from './components/images/dev_logo.png';
@@ -8,12 +8,15 @@ import Contact from './components/contact';
 import headreimg from './components/images/headerimg.webp';
 import { useState } from 'react';
 import Skills from './components/skill';
+import linkedin from './components/images/LinkedIn.svg';
+import github from './components/images/GitHub.svg';
+import instagram from './components/images/instagram.png';
 
 function App() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <BrowserRouter>
+    <HashRouter>
       <div className='nav-bar'>
         <nav>
           <div className='logo'>
@@ -29,7 +32,7 @@ function App() {
             <li><a href='#skills'>Skills</a></li>
             <li><a href='#projects'>Projects</a></li>
             <li><a href='#contact'>Contact</a></li>
-            <li><a href='/Maheswara_Developer_resume.pdf' target='_blank' rel='noopener no referrer'>Resume</a></li>
+            <li><a href='/Maheswara_Developer_resume.pdf' target='_blank' rel='noopener noreferrer'>Resume</a></li>
           </ul>
         </nav>
       </div>
@@ -39,14 +42,11 @@ function App() {
             <h3> Hi, I am</h3>
             <h1>Mora Maheswara Reddy</h1>
             <img src={Dev_logo} alt='img' />
-            <div className="dropdown">
-              <p>Follow on<button className="dropbtn"></button></p>
-              <ul className="dropdown-content">
-                <li><a href='/'>linkedIn</a></li>
-                <li><a href='/'>GitHub</a></li>
-                <li><a href='/'>Instagram</a></li>
-                <li><a href='/'>Twitter</a></li>
-              </ul>
+            <div className="home-logos">
+              <p>Follow on</p>
+              <a href='https://www.linkedin.com/in/mora-maheswara-reddy-528587288' target='_blank' rel='noopener noreferrer'><img src={linkedin} alt='img'/></a>
+              <a href='https://github.com/moramahesh' target='_blank' rel='noopener noreferrer'><img src={github} alt='img'/></a>
+              <a href='https://www.instagram.com/maheswarareddy_mora' target='_blank' rel='noopener noreferrer'><img src={instagram} alt='img'/></a>
             </div>
           </div>
           <div className='pic-box'>
@@ -62,7 +62,8 @@ function App() {
       <Projects />
       <Contact />
       <footer>&copy; 2025 Maheswara Reddy</footer>
-    </BrowserRouter>
+      
+    </HashRouter>
   );
 }
 
