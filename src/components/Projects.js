@@ -22,7 +22,7 @@ function projects() {
                             optimized with Flexbox, Grid, and image filters for cross-device
                             compatibility and performance.</p>
                         <a href="https://github.com/moramahesh/Bike-Application" target="_blank" rel='noopener noreferrer'>GitHub</a>
-                        <a href="/" target="_blank">Live Demo</a>
+                        <a href="https://moramahesh.github.io/Bike-Application" target="_blank" rel='noopener noreferrer'>Live Demo</a>
                     </div>
                 </div>
                 <div className="project-card">
